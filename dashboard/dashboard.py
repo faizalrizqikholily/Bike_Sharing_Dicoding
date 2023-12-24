@@ -9,7 +9,7 @@ import altair as alt
 # ==============================
 @st.cache(allow_output_mutation=True)
 def muat_data():
-    data = pd.read_csv("../data/hour.csv")
+    data = pd.read_csv("hour.csv")
     return data
 
 data = muat_data()
@@ -120,10 +120,10 @@ st.sidebar.info("Dashboard ini menampilkan visualisasi untuk sekumpulan data Bik
 
                         
 # Load day.csv dataset
-day_data = pd.read_csv('../data/day.csv')
+day_data = pd.read_csv('day.csv')
 
 # Load hour.csv dataset
-hour_data = pd.read_csv('../data/hour.csv')
+hour_data = pd.read_csv('hour.csv')
 
 # 1. Hubungan antara Suhu dan Jumlah Pengguna Sepeda pada Hari-hari Tertentu
 st.title('Hubungan antara Suhu dan Jumlah Pengguna Sepeda pada Hari-hari Tertentu')
