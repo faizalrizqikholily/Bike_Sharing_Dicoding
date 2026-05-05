@@ -120,10 +120,10 @@ st.sidebar.info("Dashboard ini menampilkan visualisasi untuk sekumpulan data Bik
 
                         
 # Load day.csv dataset
-day_data = pd.read_csv('day.csv')
+day_data = pd.read_csv('/dashboard/day.csv')
 
 # Load hour.csv dataset
-hour_data = pd.read_csv('hour.csv')
+hour_data = pd.read_csv('/dashboard/hour.csv')
 
 # 1. Hubungan antara Suhu dan Jumlah Pengguna Sepeda pada Hari-hari Tertentu
 st.title('Hubungan antara Suhu dan Jumlah Pengguna Sepeda pada Hari-hari Tertentu')
