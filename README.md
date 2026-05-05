@@ -9,7 +9,7 @@ Dashboard ini dibuat menggunakan **Streamlit** untuk melakukan eksplorasi dan vi
 ## 🌐 Live Demo
 
 🚀 Akses dashboard secara langsung di sini:  
-👉 **[Live Demo Bike Sharing Dashboard]([https://your-streamlit-app-url.streamlit.app](https://bikesharingdicoding-rrzevwzyzl9j59fbbt5deh.streamlit.app/))**
+👉 **[Live Demo Bike Sharing Dashboard](https://bikesharingdicoding-rrzevwzyzl9j59fbbt5deh.streamlit.app/)**
 
 ---
 
