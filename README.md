@@ -6,6 +6,11 @@ Project ini merupakan bagian dari submission **Belajar Analisis Data dengan Pyth
 
 Dashboard ini dibuat menggunakan **Streamlit** untuk melakukan eksplorasi dan visualisasi dataset **Bike Sharing**. Tujuannya adalah untuk memahami pola penggunaan sepeda berdasarkan berbagai faktor seperti waktu, cuaca, musim, dan kondisi lainnya.
 
+## 🌐 Live Demo
+
+🚀 Akses dashboard secara langsung di sini:  
+👉 **[Live Demo Bike Sharing Dashboard]([https://your-streamlit-app-url.streamlit.app](https://bikesharingdicoding-rrzevwzyzl9j59fbbt5deh.streamlit.app/))**
+
 ---
 
 ## 🎯 Tujuan Analisis
