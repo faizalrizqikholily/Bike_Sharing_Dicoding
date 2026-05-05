@@ -3,13 +3,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import altair as alt
+import os
+
+# Dapatkan direktori lokasi file dashboard.py ini berada
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # ==============================
 # MUAT DATA
 # ==============================
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def muat_data():
-    data = pd.read_csv("hour.csv")
+    # Perbarui path untuk file hour.csv
+    hour_path = os.path.join(current_dir, "hour.csv")
+    data = pd.read_csv(hour_path)
     return data
 
 data = muat_data()
@@ -25,7 +31,7 @@ st.title("Bike Share Dashboard")
 # ==============================
 st.sidebar.title("Informasi:")
 st.sidebar.markdown("**• Nama: Faizal Rizqi Kholily**")
-st.sidebar.markdown("**• Email: [faizalriziqkholily643@gmail.com](faizalriziqkholily643@gmail.com)**")
+st.sidebar.markdown("**• Email: [faizalrzqkh@gmail.com](faizalrzqkh@gmail.com)**")
 st.sidebar.markdown("**• Dicoding: [Faizal Rizqi Kholily](https://www.dicoding.com/users/faizalrizqikholily26/)**")
 
 st.sidebar.title("Dataset Bike Share")
@@ -118,12 +124,13 @@ st.sidebar.title("Tentang")
 st.sidebar.info("Dashboard ini menampilkan visualisasi untuk sekumpulan data Bike Share. "
                 "Dataset ini mengandung informasi mengenai penyewaan sepeda berdasarkan berbagai variabel seperti musim, suhu, kelembaban, dan faktor lainnya.")
 
-                        
-# Load day.csv dataset
-day_data = pd.read_csv('/dashboard/day.csv')
+# Load day.csv dataset menggunakan path dinamis
+day_path = os.path.join(current_dir, "day.csv")
+day_data = pd.read_csv(day_path)
 
-# Load hour.csv dataset
-hour_data = pd.read_csv('/dashboard/hour.csv')
+# Load hour.csv dataset menggunakan path dinamis
+hour_path_2 = os.path.join(current_dir, "hour.csv")
+hour_data = pd.read_csv(hour_path_2)
 
 # 1. Hubungan antara Suhu dan Jumlah Pengguna Sepeda pada Hari-hari Tertentu
 st.title('Hubungan antara Suhu dan Jumlah Pengguna Sepeda pada Hari-hari Tertentu')
